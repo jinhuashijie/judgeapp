@@ -51,10 +51,16 @@ const resultinfo = ctx => {
 	console.log(a)
   	ctx.response.body = list4
 };
+let msg=ctx=>{
+	const list=require('./home/say0001.js')
+	ctx.response.body=list
+}
 app.use(route.get('/api/1', main));
 app.use(route.get('/api/2', test));
 app.use(route.post('/api/result',result));//koaBody(),
 app.use(route.post('/api/getgoodsinfo',resultinfo))
+
+app.use(route.post('/api/say',msg))
 app.listen(3000,function(){
 	console.log('连接后台端口')
 });

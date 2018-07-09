@@ -9,7 +9,9 @@ module.exports = {
             distance: '120m',
             mumber: '389',
             pro:'美食',
-            id:'0001'
+            id:'0001',
+            timer:"营业时间 11:00-23:00<br/>营业时间 11:00-23:00<br/>营业时间 11:00-23:00<br/>",
+            star:'2'
         },
         {
             img: './img/2.jpg',
